@@ -47,6 +47,13 @@ Structural patterns deal with the composition of classes or objects.
 
 9. Decorator - Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to
    subclassing for extending functionality. Structure diagrams of Composite and Decorator are similar
+   Concepts:
+   - Also called wrapper
+   - Add behavior without affecting others
+   - More then just inheritance
+   - Single Responsibility Principle
+   - Compose behavior dynamically
+   Examples: java.io.InputStream
 
 10. Facade - Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that
     makes the subsystem easier to use.
