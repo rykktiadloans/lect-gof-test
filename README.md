@@ -34,6 +34,12 @@ Structural patterns deal with the composition of classes or objects.
    Example: Arrays -> Lists (not exactly, just functionality...), Streams.
 
 7. Bridge - Decouple an abstraction from its implementation so that the two can vary independently.
+   Concepts:
+   - Decouple Abstraction and implementation
+   - Encapsulation, Composition, Inheritence
+   - Changes in Abstraction won't affect client
+   - Details won't be right
+   Examples: JDBC Driver (DriverManager.registerDriver())...
 
 8. Composite - Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat
    individual objects and compositions of objects uniformly. Composite is often used with Iterator or Visitor.
