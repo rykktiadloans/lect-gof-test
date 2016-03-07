@@ -6,7 +6,8 @@ public class LazySingletonUsage {
 
 		LazySingleton singleton1 = LazySingleton.getInstance();
 		LazySingleton singleton2 = LazySingleton.getInstance();
-		System.out.println("singleton1 equals singleton2: " + singleton1.equals(singleton2));
+		System.out.println(singleton1);
+		System.out.println(singleton2);
 
 	}
 

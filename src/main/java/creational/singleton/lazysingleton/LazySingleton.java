@@ -2,7 +2,7 @@ package creational.singleton.lazysingleton;
 
 public class LazySingleton {
 
-	private static LazySingleton INSTANCE;
+	private static LazySingleton INSTANCE = null;
 
 	private LazySingleton() {
 	}

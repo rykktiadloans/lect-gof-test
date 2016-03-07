@@ -3,7 +3,7 @@ GOF Design Patterns Implementations
 Creational patterns - concern the process of object creation.
 --------------------------------------------------------------
 1. Factory Method - Define an interface for creating an object, but let subclasses decide which class to instantiate.
-Factory Method lets a class defer instantiation to subclasses.
+    Factory Method lets a class defer instantiation to subclasses.
 
 2. Abstract Factory - Provide an interface for creating families of related or dependent objects without specifying their
    concrete classes.
@@ -15,6 +15,7 @@ Factory Method lets a class defer instantiation to subclasses.
    prototype. Prototype is often an alternative to Abstract Factory.
 
 5. Singleton - Ensure a class only has one instance, and provide a global point of access to it.
+    Example: java.lang.Runtime
 
 
 Structural patterns deal with the composition of classes or objects.

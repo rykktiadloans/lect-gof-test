@@ -6,7 +6,8 @@ public class SimpleSingletonUsage {
 
 		SimpleSingleton singleton1 = SimpleSingleton.getInstance();
 		SimpleSingleton singleton2 = SimpleSingleton.getInstance();
-		System.out.println("singleton1 equals singleton2: " + singleton1.equals(singleton2));
+		System.out.println(singleton1);
+		System.out.println(singleton2);
 
 	}
 
