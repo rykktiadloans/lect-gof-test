@@ -10,11 +10,14 @@ Creational patterns - concern the process of object creation.
 
 3. Builder - Separate the construction of a complex object from its representation so that the same construction process
    can create different representations.
+   Concepts: Handles complex constructors, large number of parameters, immutability
+   Example: java.lang.StringBuilder
 
 4. Prototype - Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this
    prototype. Prototype is often an alternative to Abstract Factory.
 
 5. Singleton - Ensure a class only has one instance, and provide a global point of access to it.
+    Note: getInstance method shouldn't contains any arguments, otherwise it should me Factory patterns.
     Example: java.lang.Runtime
 
 
