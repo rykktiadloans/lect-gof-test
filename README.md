@@ -4,9 +4,11 @@ Creational patterns - concern the process of object creation.
 --------------------------------------------------------------
 1. Factory Method - Define an interface for creating an object, but let subclasses decide which class to instantiate.
     Factory Method lets a class defer instantiation to subclasses.
+    Examples: java.util.Calendar, java.util.ResourceBundle, java.text.NumberFormat
 
 2. Abstract Factory - Provide an interface for creating families of related or dependent objects without specifying their
    concrete classes.
+   Examples: javax.xml.parsers.DocumentBuilderFactory
 
 3. Builder - Separate the construction of a complex object from its representation so that the same construction process
    can create different representations.
