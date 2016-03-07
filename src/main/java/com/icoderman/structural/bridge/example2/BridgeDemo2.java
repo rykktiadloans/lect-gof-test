@@ -8,5 +8,13 @@ public class BridgeDemo2 {
 		movie.setRuntime("2:15");
 		movie.setYear("2015");
 
+		Formatter printFormatter = new PrintFormatter();
+		Printer moviePrinter = new MoviePrinter(movie);
+
+		String printedMaterial = moviePrinter.print(printFormatter);
+
+		System.out.println(printedMaterial);
+
+
 	}
 }

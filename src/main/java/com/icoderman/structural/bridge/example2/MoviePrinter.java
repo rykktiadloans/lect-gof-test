@@ -1,7 +1,8 @@
 package com.icoderman.structural.bridge.example2;
 
+import java.util.ArrayList;
 import java.util.List;
-
+// First part of the bridge
 public class MoviePrinter extends Printer {
 
 	private Movie movie;
@@ -12,11 +13,15 @@ public class MoviePrinter extends Printer {
 
 	@Override
 	protected List<Detail> getDetails() {
-		return null;
+		List<Detail> details = new ArrayList<>();
+		details.add(new Detail("Title", movie.getTitle()));
+		details.add(new Detail("Year", movie.getYear()));
+		details.add(new Detail("Runtime", movie.getRuntime()));
+		return details;
 	}
 
 	@Override
 	protected String getHeader() {
-		return null;
+		return movie.getClassification();
 	}
 }
