@@ -43,6 +43,7 @@ Structural patterns deal with the composition of classes or objects.
 
 8. Composite - Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat
    individual objects and compositions of objects uniformly. Composite is often used with Iterator or Visitor.
+   Examples: java.awt.Component, RESTful service GETs
 
 9. Decorator - Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to
    subclassing for extending functionality. Structure diagrams of Composite and Decorator are similar
