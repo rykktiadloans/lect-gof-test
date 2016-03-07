@@ -4,15 +4,17 @@ Creational patterns - concern the process of object creation.
 --------------------------------------------------------------
 1. Factory Method - Define an interface for creating an object, but let subclasses decide which class to instantiate.
     Factory Method lets a class defer instantiation to subclasses.
+    Note: Returns various instances, Multiple constructors, Interface driven, Adaptable to environment more easily
     Examples: java.util.Calendar, java.util.ResourceBundle, java.text.NumberFormat
 
 2. Abstract Factory - Provide an interface for creating families of related or dependent objects without specifying their
    concrete classes.
+   Note: Implemented with a Factory, Hides the Factory, Abstracts Environment, Build through Composition
    Examples: javax.xml.parsers.DocumentBuilderFactory
 
 3. Builder - Separate the construction of a complex object from its representation so that the same construction process
    can create different representations.
-   Concepts: Handles complex constructors, large number of parameters, immutability
+   Note: Handles complex constructors, large number of parameters, immutability
    Example: java.lang.StringBuilder
 
 4. Prototype - Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this
@@ -28,6 +30,8 @@ Structural patterns deal with the composition of classes or objects.
 
 6. Adapter - Convert the interface of a class into another interface clients expect. Adapter lets classes work together
    that couldn't otherwise because of incompatible interfaces.
+   Note: Works after code is designed, Legacy
+   Example: Arrays -> Lists (not exactly, just functionality...), Streams.
 
 7. Bridge - Decouple an abstraction from its implementation so that the two can vary independently.
 
