@@ -69,6 +69,12 @@ Structural patterns deal with the composition of classes or objects.
     - Typically encompasses full lifecycle
 
 11. Flyweight - Use sharing to support large numbers of fine-grained objects efficiently.
+    Concepts:
+    - More efficient use of memory
+    - Large number of similar objects
+    - Immutable
+    - Most of the object states can be extrinsic
+    Examples: java.lang.String, Integer.valueOf - pools
 
 12. Proxy - Provide a surrogate or placeholder for another object to control access to it.
 
