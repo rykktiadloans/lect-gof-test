@@ -53,10 +53,20 @@ Structural patterns deal with the composition of classes or objects.
    - More then just inheritance
    - Single Responsibility Principle
    - Compose behavior dynamically
-   Examples: java.io.InputStream
+   Examples: java.io.InputStream, java.io.BufferedReader
 
 10. Facade - Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that
     makes the subsystem easier to use.
+    Concepts:
+    - Make an API easier to use
+    - Reduce dependencies on outside code
+    - Simplify the interface or client usage
+    - Usually a refactoring pattern
+    Examples: java.net.URL
+    Design:
+    - Class that utilizes composition
+    - Shouldn't have a need for inheritance
+    - Typically encompasses full lifecycle
 
 11. Flyweight - Use sharing to support large numbers of fine-grained objects efficiently.
 
