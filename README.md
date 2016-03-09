@@ -77,6 +77,13 @@ Structural patterns deal with the composition of classes or objects.
     Examples: java.lang.String, Integer.valueOf - pools
 
 12. Proxy - Provide a surrogate or placeholder for another object to control access to it.
+    Short Definition: Proxy - is a pattern that act as an interface to something else.
+    Concepts:
+    - Interface by wrapping
+    - Can add functionality
+    - Security, Simplicity, Remote, Cost
+    - Proxy called to access real object
+    Examples: java.lang.reflect.Proxy, java.rmi.*,
 
 
 Behavioral patterns characterize the ways in which classes or objects interact and distribute responsibility.
