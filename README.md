@@ -124,6 +124,13 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 17. Iterator - Provide a way to access the elements of an aggregate object sequentially without exposing its underlying
     representation.
+    Short Definition: It's a design pattern for providing navigation without exposing of a structure of an object.
+    Concepts:
+    - Traverse a container
+    - Doesn't expose underlying structure
+    - Decouples algorithms
+    - Sequential
+    Examples: java.util.Iterator, java.util.Enumeration
 
 18. Mediator - Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping
     objects from referring to each other explicitly, and it lets you vary their interaction independently.
