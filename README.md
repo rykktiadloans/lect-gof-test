@@ -107,6 +107,13 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 16. Command - Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or
     log requests, and support undoable operations.
+    Short Definition: It's a design pattern that lets you encapsulate each request as an object.
+    Concepts:
+    - Encapsulate request as an Object
+    - Object-oriented callback
+    - Decouple sender from processor
+    - Often used for "Undo" functionality
+    Examples: java.lang.Runnable
 
 17. Iterator - Provide a way to access the elements of an aggregate object sequentially without exposing its underlying
     representation.
