@@ -91,6 +91,13 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 13. Interpreter - Given a language, define a represention for its grammar along with an interpreter that uses the
     representation to interpret sentences in the language.
+    Short Definition: It's behavioral pattern that you use to represent the grammar of the language.
+    Concepts:
+    - Represent grammar
+    - Interpret a sentence
+    - Map a domain
+    - AST
+    Examples: java.util.Pattern, java.text.Format
 
 14. Template Method - Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.
     Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
