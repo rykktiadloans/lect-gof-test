@@ -97,6 +97,13 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 15. Chain of Responsibility - Avoid coupling the sender of a request to its receiver by giving more than one object a chance
     to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
+    Short Definition: It's behavioral pattern that decouples request from a handling object in a chain of handlers util it is finally recognized.
+    Concepts:
+    - Decoupling of sender and receiver
+    - Receiver contains reference to next receiver
+    - Promotes loose coupling
+    - No Handler - OK
+    Examples: java.util.logging.Logger#log(), javax.servlet.Filter#doFilter(), Spring security filters
 
 16. Command - Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or
     log requests, and support undoable operations.
