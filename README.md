@@ -165,6 +165,14 @@ Behavioral patterns characterize the ways in which classes or objects interact a
     Components: Subject, Concrete Subject, Observer, Concrete Observer
 
 21. State - Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
+    Short Definition: Used when we need to represent state of an application.
+    Concepts:
+    - Localize state behaviour
+    - State Object
+    - Separates What from Where
+    - OCP (Open-Close Principle)
+    Examples: JSF
+    Components: Context, State, ConcreteState
 
 22. Strategy - Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the
     algorithm vary independently from clients that use it.
