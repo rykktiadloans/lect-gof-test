@@ -144,6 +144,13 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 19. Memento - Without violating encapsulation, capture and externalize an object’s internal state so that the object can be
     restored to this state later.
+    Short Definition: Pattern that used to externalize an object state usually to provide rollback functionality. (components: Originator, Caretaker, Memento)
+    Concepts:
+    - Restore Object to previous state
+    - Externalize internal state
+    - Shield complex internals
+    Examples: java.util.Date, java.io.Serializable
+
 
 20. Observer - Define a one-to-many dependency between objects so that when one object changes state, all its dependents are
     notified and updated automatically.
