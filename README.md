@@ -134,6 +134,13 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 18. Mediator - Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping
     objects from referring to each other explicitly, and it lets you vary their interaction independently.
+    Short Definition: Pattern that used to define how objects interacts with one another without have them refer to each other explicitly.
+    Concepts:
+    - Loose coupling
+    - Well-defined, but complex
+    - Reusable components
+    - Hub / Router
+    Examples: java.util.Timer, java.langreflect.Method#invoke()
 
 19. Memento - Without violating encapsulation, capture and externalize an object’s internal state so that the object can be
     restored to this state later.
