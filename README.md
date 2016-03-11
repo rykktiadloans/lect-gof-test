@@ -134,7 +134,7 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 18. Mediator - Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping
     objects from referring to each other explicitly, and it lets you vary their interaction independently.
-    Short Definition: Pattern that used to define how objects interacts with one another without have them refer to each other explicitly.
+    Short Definition: Pattern that used to define how objects interacts with one another without have them refer to each other explicitly. (Similar to Observer)
     Concepts:
     - Loose coupling
     - Well-defined, but complex
@@ -154,6 +154,15 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 20. Observer - Define a one-to-many dependency between objects so that when one object changes state, all its dependents are
     notified and updated automatically.
+    Short Definition: Observer is a decoupling pattern, when we have a subject that need to be observed by one or more observers. (Similar to Mediator)
+    Concepts:
+    - One to Many
+    - Decoupled
+    - Event Handling
+    - Pub / Sub
+    - Most used in MVC
+    Examples: java.util.Observer, java.util.EventListener, javax.jms.Topic
+    Components: Subject, Concrete Subject, Observer, Concrete Observer
 
 21. State - Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
 
