@@ -196,6 +196,15 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 23. Visitor - Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new
     operation without changing the classes of the elements on which it operates.
+    Short Definition: Way to separate an algorithm from an object structure.
+    Concepts:
+    - Separate Algorithm from Object
+    - Adding new features
+    - Maintain Open/Closed principle
+    - Visitor changes
+    Examples: java.lang.model.elementElementVisitor
+    Components: Visitor, ConcreteVisitor, Element, ConcreteElement
+
 
 ========================================================================================================================
 
