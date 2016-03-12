@@ -101,6 +101,14 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 14. Template Method - Define the skeleton of an algorithm in an operation, deferring some steps to subclasses.
     Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
+    Short Definition: Used to define an algorithm that allows subclasses to redefine parts of the algorithm without changing it's structure.
+    Concepts:
+    - Code reuse
+    - Common in libraries/frameworks
+    - IoC
+    - Algorithm emphasis
+    Examples: java.util.Collections#sort(), java.util.AbstractList#indexOf()
+    Components: AbstractBase, ConcreteClass
 
 15. Chain of Responsibility - Avoid coupling the sender of a request to its receiver by giving more than one object a chance
     to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
