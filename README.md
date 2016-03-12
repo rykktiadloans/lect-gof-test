@@ -140,7 +140,7 @@ Behavioral patterns characterize the ways in which classes or objects interact a
     - Well-defined, but complex
     - Reusable components
     - Hub / Router
-    Examples: java.util.Timer, java.langreflect.Method#invoke()
+    Examples: java.util.Timer, java.lang.reflect.Method#invoke()
 
 19. Memento - Without violating encapsulation, capture and externalize an object’s internal state so that the object can be
     restored to this state later.
@@ -176,6 +176,15 @@ Behavioral patterns characterize the ways in which classes or objects interact a
 
 22. Strategy - Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the
     algorithm vary independently from clients that use it.
+    Short Definition: Used when you want to enable the strategy or algorithm to be selected at runtime.
+    Concepts:
+    - Eliminate conditional statements
+    - Behaviour encapsulated in classes
+    - Difficult to add new strategies
+    - Client aware of strategies
+    - Client chooses strategy
+    Examples: java.util.Comparator
+    Components: Context, Strategy, ConcreteStrategy
 
 23. Visitor - Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new
     operation without changing the classes of the elements on which it operates.
