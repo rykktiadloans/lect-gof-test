@@ -5,24 +5,54 @@ Creational patterns - concern the process of object creation.
 1. Factory Method - Define an interface for creating an object, but let subclasses decide which class to instantiate.
     Factory Method lets a class defer instantiation to subclasses.
     Note: Returns various instances, Multiple constructors, Interface driven, Adaptable to environment more easily
+    Concepts:
+    - Doesn't expose instantiation logic
+    - Defer to subclasses
+    - Common interface
+    - Specified by architecture, implemented by user
     Examples: java.util.Calendar, java.util.ResourceBundle, java.text.NumberFormat
 
 2. Abstract Factory - Provide an interface for creating families of related or dependent objects without specifying their
    concrete classes.
    Note: Implemented with a Factory, Hides the Factory, Abstracts Environment, Build through Composition
+   Short definition: Factory of factories.
+   Concepts:
+   - Factory of Factories
+   - Factory of related objects
+   - Common Interface
+   - Defer to Subclasses
    Examples: javax.xml.parsers.DocumentBuilderFactory
 
 3. Builder - Separate the construction of a complex object from its representation so that the same construction process
    can create different representations.
    Note: Handles complex constructors, large number of parameters, immutability
+   Short definition: Pattern for handling the construction of objects that might contain a lot of parameters,
+   and we want to make the object immutable when we done the construction.
+   Concepts:
+   - Handles complex constructors
+   - Large number of parameters
+   - Immutability
    Example: java.lang.StringBuilder
 
 4. Prototype - Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this
    prototype. Prototype is often an alternative to Abstract Factory.
+   Short definition: Used when the type of object to create is determined by a prototypical instance which is cloned
+   to produce an new instance. Ofter prototype is used to get a unique instance of the same object.
+   Concepts:
+   - Avoids costly creation
+   - Avoids subclassing
+   - Typically doesn't use "new"
+   - Often utilizes an Interface
+   - Usually implemented with a Registry
+   Examples: java.lang.Object#clone()
 
 5. Singleton - Ensure a class only has one instance, and provide a global point of access to it.
     Note: getInstance method shouldn't contains any arguments, otherwise it should me Factory patterns.
-    Example: java.lang.Runtime
+    Concepts:
+    - Only one instance creted
+    - Guarantees control of a resource
+    - Usually lazily loaded
+    Example: java.lang.Runtime, Spring beans with Singleton scope
 
 
 Structural patterns deal with the composition of classes or objects.
@@ -31,9 +61,19 @@ Structural patterns deal with the composition of classes or objects.
 6. Adapter - Convert the interface of a class into another interface clients expect. Adapter lets classes work together
    that couldn't otherwise because of incompatible interfaces.
    Note: Works after code is designed, Legacy
+   Short definition: Pattern for connecting new code to legacy code, without having to change the working contract that was
+   produced from the legacy code originally.
+   Concepts:
+   - Plug adaptor
+   - Convert interface into another interface
+   - Legacy
+   - Translate requests
+   - Client, Adapter, Adaptee
    Example: Arrays -> Lists (not exactly, just functionality...), Streams.
 
 7. Bridge - Decouple an abstraction from its implementation so that the two can vary independently.
+    Short definition: The Bridge pattern is very similar to the Adapter with a main difference: bridge works with new
+    code whereas an Adapter works with legacy code.
    Concepts:
    - Decouple Abstraction and implementation
    - Encapsulation, Composition, Inheritence
@@ -42,7 +82,13 @@ Structural patterns deal with the composition of classes or objects.
    Examples: JDBC Driver (DriverManager.registerDriver())...
 
 8. Composite - Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat
+   Short definition: Composite is a hierarchical type pattern that deals with tree structures of information.
    individual objects and compositions of objects uniformly. Composite is often used with Iterator or Visitor.
+   Concepts:
+   - Components represent part of whole structure
+   - Compose objects into tree structures
+   - Individual object treated as a Composite
+   - Some operations applied on individual and composites
    Examples: java.awt.Component, RESTful service GETs
 
 9. Decorator - Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to
