@@ -1,14 +1,14 @@
 package com.icoderman.behavioral.mediator.example1;
 
 public class TurnOnAllLightsCommand implements Command {
-	private Mediator med;
+    private Mediator med;
 
-	public TurnOnAllLightsCommand(Mediator mediator) {
-		this.med = mediator;
-	}
+    public TurnOnAllLightsCommand(Mediator mediator) {
+        this.med = mediator;
+    }
 
-	@Override
-	public void execute() {
-		med.turnOnAllLights();
-	}
+    @Override
+    public void execute() {
+        med.turnOnAllLights();
+    }
 }

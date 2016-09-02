@@ -1,19 +1,19 @@
 package com.icoderman.behavioral.state.example1;
 
 public class FanLowState extends State {
-	private Fan fan;
+    private Fan fan;
 
-	public FanLowState(Fan fan) {
-		this.fan = fan;
-	}
+    public FanLowState(Fan fan) {
+        this.fan = fan;
+    }
 
-	@Override
-	public void handleRequest() {
-		System.out.println("Turning fan on med.");
-		fan.setState(fan.getFanMedState());
-	}
+    @Override
+    public void handleRequest() {
+        System.out.println("Turning fan on med.");
+        fan.setState(fan.getFanMedState());
+    }
 
-	public String toString() {
-		return "Fan is low";
-	}
+    public String toString() {
+        return "Fan is low";
+    }
 }

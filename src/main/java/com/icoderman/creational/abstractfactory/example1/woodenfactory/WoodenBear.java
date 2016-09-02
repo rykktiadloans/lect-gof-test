@@ -4,9 +4,9 @@ import com.icoderman.creational.abstractfactory.example1.Bear;
 
 public class WoodenBear extends Bear {
 
-	@Override
-	protected String getName() {
-		return "Wooden Bear";
-	}
+    @Override
+    protected String getName() {
+        return "Wooden Bear";
+    }
 
 }

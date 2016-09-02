@@ -4,9 +4,9 @@ import com.icoderman.creational.abstractfactory.example2.ProductB;
 
 public class ProductBF1 extends ProductB {
 
-	@Override
-	public String getName() {
-		return "Product BF1";
-	}
+    @Override
+    public String getName() {
+        return "Product BF1";
+    }
 
 }

@@ -7,16 +7,16 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public class DecoratorEverydayDemo {
-	public static void main(String[] args) throws IOException {
-		File file = new File("./output.txt");
-		file.createNewFile();
+    public static void main(String[] args) throws IOException {
+        File file = new File("./output.txt");
+        file.createNewFile();
 
-		OutputStream outputStream = new FileOutputStream(file);
+        OutputStream outputStream = new FileOutputStream(file);
 
-		DataOutputStream dataOutputStream = new DataOutputStream(outputStream);
-		dataOutputStream.writeChars("text");
+        DataOutputStream dataOutputStream = new DataOutputStream(outputStream);
+        dataOutputStream.writeChars("text");
 
-		dataOutputStream.close();
-		outputStream.close();
-	}
+        dataOutputStream.close();
+        outputStream.close();
+    }
 }

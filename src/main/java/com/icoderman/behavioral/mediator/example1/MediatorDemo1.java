@@ -1,19 +1,19 @@
 package com.icoderman.behavioral.mediator.example1;
 
 public class MediatorDemo1 {
-	public static void main(String[] args) {
-		Mediator mediator = new Mediator();
+    public static void main(String[] args) {
+        Mediator mediator = new Mediator();
 
-		Light bedroomLight = new Light("Bedroom");
-		Light kitchenLight = new Light("Kitchen");
+        Light bedroomLight = new Light("Bedroom");
+        Light kitchenLight = new Light("Kitchen");
 
-		mediator.registerLight(bedroomLight);
-		mediator.registerLight(kitchenLight);
+        mediator.registerLight(bedroomLight);
+        mediator.registerLight(kitchenLight);
 
-		Command turnOnAllLightsCommand = new TurnOnAllLightsCommand(mediator);
-		turnOnAllLightsCommand.execute();
+        Command turnOnAllLightsCommand = new TurnOnAllLightsCommand(mediator);
+        turnOnAllLightsCommand.execute();
 
-		Command turnOffAllLightsCommand = new TurnOffAllLightsCommand(mediator);
-		turnOffAllLightsCommand.execute();
-	}
+        Command turnOffAllLightsCommand = new TurnOffAllLightsCommand(mediator);
+        turnOffAllLightsCommand.execute();
+    }
 }

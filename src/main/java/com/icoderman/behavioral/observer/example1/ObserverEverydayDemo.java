@@ -4,38 +4,38 @@ import java.util.Observable;
 import java.util.Observer;
 
 public class ObserverEverydayDemo {
-	public static void main(String[] args) {
-		TwitterStream messageStream = new TwitterStream();
+    public static void main(String[] args) {
+        TwitterStream messageStream = new TwitterStream();
 
-		Client client1 = new Client("Bryan");
-		Client client2 = new Client("Mark");
+        Client client1 = new Client("Bryan");
+        Client client2 = new Client("Mark");
 
-		messageStream.addObserver(client1);
-		messageStream.addObserver(client2);
+        messageStream.addObserver(client1);
+        messageStream.addObserver(client2);
 
-		messageStream.someoneTweeted();
-	}
+        messageStream.someoneTweeted();
+    }
 }
 
 // concrete subject
 class TwitterStream extends Observable {
 
-	public void someoneTweeted() {
-		setChanged();
-		notifyObservers();
-	}
+    public void someoneTweeted() {
+        setChanged();
+        notifyObservers();
+    }
 }
 
 class Client implements Observer {
 
-	private String name;
+    private String name;
 
-	Client(String name) {
-		this.name = name;
-	}
+    Client(String name) {
+        this.name = name;
+    }
 
-	@Override
-	public void update(Observable o, Object arg) {
-		System.out.println("Update " + name + "'s stream, someone tweeted something.");
-	}
+    @Override
+    public void update(Observable o, Object arg) {
+        System.out.println("Update " + name + "'s stream, someone tweeted something.");
+    }
 }

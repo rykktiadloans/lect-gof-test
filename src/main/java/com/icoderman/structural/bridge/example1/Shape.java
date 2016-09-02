@@ -1,11 +1,11 @@
 package com.icoderman.structural.bridge.example1;
 
 public abstract class Shape {
-	protected Color color;
+    protected Color color;
 
-	public Shape(Color color) {
-		this.color = color;
-	}
+    public Shape(Color color) {
+        this.color = color;
+    }
 
-	abstract void applyColor();
+    abstract void applyColor();
 }

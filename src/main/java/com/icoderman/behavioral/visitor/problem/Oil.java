@@ -1,8 +1,8 @@
 package com.icoderman.behavioral.visitor.problem;
 
 public class Oil implements AtvPart {
-	@Override
-	public double calculateShipping() {
-		return 9;
-	}
+    @Override
+    public double calculateShipping() {
+        return 9;
+    }
 }

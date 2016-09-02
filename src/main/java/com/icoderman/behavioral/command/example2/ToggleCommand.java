@@ -2,14 +2,14 @@ package com.icoderman.behavioral.command.example2;
 
 public class ToggleCommand implements Command {
 
-	private Light light;
+    private Light light;
 
-	public ToggleCommand(Light light) {
-		this.light = light;
-	}
+    public ToggleCommand(Light light) {
+        this.light = light;
+    }
 
-	@Override
-	public void execute() {
-		light.toggle();
-	}
+    @Override
+    public void execute() {
+        light.toggle();
+    }
 }

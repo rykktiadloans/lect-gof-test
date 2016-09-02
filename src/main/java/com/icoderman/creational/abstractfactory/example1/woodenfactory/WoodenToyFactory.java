@@ -6,14 +6,14 @@ import com.icoderman.creational.abstractfactory.example1.ToyFactory;
 
 public class WoodenToyFactory implements ToyFactory {
 
-	@Override
-	public Bear getBear() {
-		return new WoodenBear();
-	}
+    @Override
+    public Bear getBear() {
+        return new WoodenBear();
+    }
 
-	@Override
-	public Cat getCat() {
-		return new WoodenCat();
-	}
+    @Override
+    public Cat getCat() {
+        return new WoodenCat();
+    }
 
 }

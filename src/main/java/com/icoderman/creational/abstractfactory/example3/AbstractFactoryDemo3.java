@@ -4,17 +4,17 @@ import com.icoderman.creational.abstractfactory.example3.applefactory.AppleFacto
 
 public class AbstractFactoryDemo3 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		TechFactory techFactory = new AppleFactory();
-		//TechFactory techFactory = new SamsungFactory();
+        TechFactory techFactory = new AppleFactory();
+        //TechFactory techFactory = new SamsungFactory();
 
-		Laptop laptop = techFactory.getLaptop();
-		System.out.println(laptop.getName());
+        Laptop laptop = techFactory.getLaptop();
+        System.out.println(laptop.getName());
 
-		Phone ultraBook = techFactory.getPhone();
-		System.out.println(ultraBook.getName());
+        Phone ultraBook = techFactory.getPhone();
+        System.out.println(ultraBook.getName());
 
-	}
+    }
 
 }

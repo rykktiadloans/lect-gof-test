@@ -5,26 +5,26 @@ import java.util.List;
 
 public abstract class MenuComponent {
 
-	String name;
-	String url;
+    String name;
+    String url;
 
-	List<MenuComponent> menuComponents = new ArrayList<>();
+    List<MenuComponent> menuComponents = new ArrayList<>();
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getUrl() {
-		return url;
-	}
+    public String getUrl() {
+        return url;
+    }
 
-	public abstract String toString();
+    public abstract String toString();
 
-	String print(MenuComponent menuComponent) {
-		StringBuilder builder = new StringBuilder(name);
-		builder.append(": ");
-		builder.append(url);
-		builder.append("\n");
-		return builder.toString();
-	}
+    String print(MenuComponent menuComponent) {
+        StringBuilder builder = new StringBuilder(name);
+        builder.append(": ");
+        builder.append(url);
+        builder.append("\n");
+        return builder.toString();
+    }
 }

@@ -2,12 +2,12 @@ package com.icoderman.creational.singleton.simplesingleton;
 
 public class SimpleSingleton {
 
-	private static SimpleSingleton INSTANCE = new SimpleSingleton();
+    private static SimpleSingleton INSTANCE = new SimpleSingleton();
 
-	private SimpleSingleton() {
-	}
+    private SimpleSingleton() {
+    }
 
-	public static SimpleSingleton getInstance() {
-		return INSTANCE;
-	}
+    public static SimpleSingleton getInstance() {
+        return INSTANCE;
+    }
 }
