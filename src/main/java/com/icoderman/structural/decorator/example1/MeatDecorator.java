@@ -1,5 +1,6 @@
 package com.icoderman.structural.decorator.example1;
 
+//$meat-decorator-src MeatDecorator class
 public class MeatDecorator extends SandwichDecorator {
 
     public MeatDecorator(Sandwich customSandwich) {

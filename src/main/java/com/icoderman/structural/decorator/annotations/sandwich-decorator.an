@@ -1,0 +1,10 @@
+# SandwichDecorator classes
+
+In order to extend the making capabilities of out sandwich, we will have to use the SandwichDecorator class $sandwich-decorator-src.
+
+All it does by itself is take another Sandwich interface, and store it for future use. It's subclasses, however, such as
+MeatDecorator $meat-decorator-src and DressingDecorator $dressing-decorator-src, can override the behavior of the make() method,
+and do some new behavior before calling the make() method of the stored sandwich, creating a bit of a matryoshka.
+
+This allows us to easily combine different decorators to get any sandwich combination at run time. The main program shows
+an example that will output "Bread + Meat + Dressing".

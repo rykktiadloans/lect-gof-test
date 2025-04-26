@@ -1,0 +1,11 @@
+# Sandwich decorator
+
+The sandwich assembly part of this program uses the decorator pattern, the point of which is to allow the programmer to
+extend an already existing operation by wrapping an object that does it in a wrapper.
+
+In this program, the point is to print a sandwich and its contents to the console.
+
+The sandwich itself is represented by a SimpleSandwich class $simple-sandwich-src, which is a subclass of the
+Sandwich interface $sandwich.
+
+To add new ingredients to the sandwich, we use SandwichDecorator classes $sandwich-decorator

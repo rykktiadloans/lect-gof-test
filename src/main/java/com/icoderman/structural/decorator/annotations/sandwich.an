@@ -1,0 +1,6 @@
+# Sandwich interface
+
+Sandwich interface $sandwich-src is the interface that unites both the basic sandwich itself $simple-sandwich-src, and its
+decorators $sandwich-decorator
+
+All of them share the make() method. In case of the SimpleSandwich, it just outputs "Bread"

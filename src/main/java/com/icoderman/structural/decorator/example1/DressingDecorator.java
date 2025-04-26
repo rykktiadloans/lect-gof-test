@@ -1,5 +1,6 @@
 package com.icoderman.structural.decorator.example1;
 
+//$dressing-decorator-src DressingDecorator class
 public class DressingDecorator extends SandwichDecorator {
 
     public DressingDecorator(Sandwich customSandwich) {

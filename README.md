@@ -1,5 +1,7 @@
 GOF Design Patterns Implementations
 
+## Cloned from https://github.com/omandryk/gof-design-patterns
+
 Creational patterns - concern the process of object creation.
 --------------------------------------------------------------
 1. Factory Method - Define an interface for creating an object, but let subclasses decide which class to instantiate.
