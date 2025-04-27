@@ -4,34 +4,32 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.Optional;
 
-public class SecurityProxy implements InvocationHandler {
+public class SecurityProxy implements TwitterService {
 
-    private Object obj;
+    private Optional<TwitterService> service;
 
-    private SecurityProxy(Object obj) {
-        this.obj = obj;
+    public SecurityProxy() {
+        this.service = Optional.empty();
     }
 
-    public static Object newInstance(Object obj) {
-        return Proxy.newProxyInstance(obj.getClass().getClassLoader(),
-                obj.getClass().getInterfaces(), new SecurityProxy(obj));
+    private void ensureServiceExists() {
+        if(this.service.isPresent()) {
+            return;
+        }
+        this.service = Optional.of(new TwitterServiceImpl());
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        Object result;
-        try {
-            if (method.getName().contains("post")) {
-                throw new IllegalAccessException("Posts are currently not allowed");
-            } else {
-                result = method.invoke(obj, args);
-            }
-        } catch (InvocationTargetException e) {
-            throw e.getTargetException();
-        } catch (Exception e) {
-            throw new RuntimeException("unexpected invocation exception: " + e.getMessage());
-        }
-        return result;
+    public String getTimeline(String screenName) {
+        ensureServiceExists();
+        return this.service.get().getTimeline(screenName);
+    }
+
+    @Override
+    public void postToTimeline(String screenName, String message) {
+        throw new ProxyException("It is forbidden to use post functionality");
+
     }
 }

@@ -8,6 +8,7 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
 import twitter4j.conf.ConfigurationBuilder;
 
+import javax.security.auth.login.Configuration;
 import java.util.List;
 
 public class TwitterServiceImpl implements TwitterService {
@@ -17,23 +18,29 @@ public class TwitterServiceImpl implements TwitterService {
     private static final String TWITTER_ACCESS_TOKEN = "TOKEN";
     private static final String TWITTER_ACCESS_TOKEN_SECRET = "TOKEN";
 
-    @Override
-    public String getTimeline(String screenName) {
+    private final Twitter twitter;
 
+    public TwitterServiceImpl() {
         ConfigurationBuilder cb = new ConfigurationBuilder();
-        cb.setDebugEnabled(true)
+        this.configurationBuilder.setDebugEnabled(true)
                 .setOAuthConsumerKey(TWITTER_CONSUMER_KEY)
                 .setOAuthConsumerSecret(TWITTER_SECRET_KEY)
                 .setOAuthAccessToken(TWITTER_ACCESS_TOKEN)
                 .setOAuthAccessTokenSecret(TWITTER_ACCESS_TOKEN_SECRET);
         TwitterFactory tf = new TwitterFactory(cb.build());
-        Twitter twitter = tf.getInstance();
+        this.twitter = tf.getInstance();
+
+    }
+
+    @Override
+    public String getTimeline(String screenName) {
+
         StringBuilder builder = new StringBuilder();
         try {
             Query query = new Query(screenName);
             QueryResult result;
             do {
-                result = twitter.search(query);
+                result = this.twitter.search(query);
                 List<Status> tweets = result.getTweets();
                 for (Status tweet : tweets) {
                     builder.append("@" + tweet.getUser().getScreenName() + " - " + tweet.getText());
