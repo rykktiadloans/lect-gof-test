@@ -1,9 +1,5 @@
 package com.icoderman.structural.proxy.example1;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.util.Optional;
 
 public class SecurityProxy implements TwitterService {
@@ -29,7 +25,7 @@ public class SecurityProxy implements TwitterService {
 
     @Override
     public void postToTimeline(String screenName, String message) {
-        throw new ProxyException("It is forbidden to use post functionality");
+        throw new SecurityException("It is forbidden to use post functionality");
 
     }
 }
